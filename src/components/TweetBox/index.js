@@ -1,3 +1,3 @@
-import TweetBox from "./TweetBox";
+import TweetBox from './TweetBox';
 
 export default TweetBox;

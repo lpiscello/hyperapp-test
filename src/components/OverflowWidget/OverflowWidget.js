@@ -1,6 +1,6 @@
-import { h } from "hyperapp";
+import { h } from 'hyperapp';
 
-import styles from "./OverflowWidget.css";
+import styles from './OverflowWidget.css';
 
 const OverflowWidget = ({ text, offset, count }) => (
   <div class={styles.overflow}>

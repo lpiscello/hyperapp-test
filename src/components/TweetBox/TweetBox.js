@@ -13,7 +13,7 @@ const Tweetbox = ({ maxLenght, count, text, update }) => (
         </li>
 
         <li class={styles.flexInner}>
-          <span class={count > OFFSET ? "" : styles.overflowCount}>{count}</span>
+          <span class={count > OFFSET ? '' : styles.overflowCount}>{count}</span>
 
           <button
             onclick={() => alert(text)}

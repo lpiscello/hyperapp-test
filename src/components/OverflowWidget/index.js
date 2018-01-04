@@ -1,3 +1,3 @@
-import OverflowWidget from "./OverflowWidget";
+import OverflowWidget from './OverflowWidget';
 
 export default OverflowWidget;

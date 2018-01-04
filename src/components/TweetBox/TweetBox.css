@@ -7,22 +7,27 @@
   font-size: 1.4em;
   font-weight: 100;
 }
+
 .overflowCountAlert {
   color: OrangeRed;
   font-size: 1.4em;
   font-weight: 100;
 }
+
 .flexInner {
   display: flex;
   justify-content: flex-end;
 }
+
 .flexOuter li {
   align-items: center;
   display: flex;
 }
+
 .flexOuter > li:not(:last-child) {
   margin-bottom: 20px;
 }
+
 .flexOuter li textarea {
   border: 1px solid #555;
   font-weight: 100;
@@ -35,6 +40,7 @@
   background: #1a1a1a;
   color: #ddd;
 }
+
 .flexOuter li textarea:hover,  .flexOuter li textarea:focus {
   border: 1px solid #00ccff;
 }
@@ -50,17 +56,21 @@
   font-weight: 100;
   font-size: 1.5em;
 }
+
 .flexOuter li button:active, .flexOuter li button:hover {
   background: #00ccff;
   color: black;
   border: 1px solid #00ccff;
 }
+
 .flexOuter li button:active {
   outline: 1px solid #00ccff;
 }
+
 .flexOuter li button:focus {
   border: 1px solid #00ccff;
 }
+
 .flexOuter li button:disabled {
   color: #555;
   background-color: #222;

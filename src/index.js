@@ -4,18 +4,6 @@ import Tweetbox from './components/TweetBox';
 
 const MAX_LENGTH = 120;
 
-const state = {
-  text: "",
-  count: MAX_LENGTH,
-};
-
-const actions = {
-  update: text => state => ({
-    text,
-    count: state.count + state.text.length - text.length,
-  }),
-};
-
 const view = (state, actions) => (
   <Tweetbox
     maxLenght={MAX_LENGTH}
@@ -25,4 +13,16 @@ const view = (state, actions) => (
   />
 );
 
-const main = app(state, actions, view, document.body);
+const actions = {
+  update: text => state => ({
+    text,
+    count: (state.count + state.text.length) - text.length,
+  }),
+};
+
+const state = {
+  text: '',
+  count: MAX_LENGTH,
+};
+
+app(state, actions, view, document.body);
