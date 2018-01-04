@@ -1,0 +1,20 @@
+.overflow {
+  background-color: #222;
+  color: #ddd;
+  margin-top: 20px;
+  padding: 40px;
+  font-size: 1.2em;
+  font-weight: 100;
+}
+
+.overflow h1 {
+  margin: 0 0 20px 0;
+  font-weight: 100;
+  color: white;
+}
+
+.overflowText {
+  background-color: OrangeRed;
+  color: white;
+  letter-spacing: 1px;
+}
