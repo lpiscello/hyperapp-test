@@ -1,5 +1,5 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // eslint-disable-line import/no-extraneous-dependencies
 
 module.exports = {
   entry: './src/index.js',
@@ -8,7 +8,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: './dist',
   },
   plugins: [new HtmlWebpackPlugin({
     title: 'Awesome app!',
@@ -19,7 +19,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' 
+        loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]',
       },
       {
         test: /\.js$/,
@@ -28,7 +28,7 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['babel-preset-env'],
-            plugins: ['transform-object-rest-spread', ['transform-react-jsx', { "pragma": "h" }]],
+            plugins: ['transform-object-rest-spread', ['transform-react-jsx', { pragma: 'h' }]],
           },
         },
       },
